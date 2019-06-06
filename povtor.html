@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="text py-3 col-6 mx-auto mt-3 text-center px-3 border border-success"></div>
+	<div class="text py-3 col-6 mx-auto mt-3 text-center px-3 border border-success"></div>
+	<div class="text py-3 col-6 mx-auto mt-3 text-center px-3 border border-success"></div>
+	<div class="text py-3 col-6 mx-auto mt-3 text-center px-3 border border-success"></div>
+<script type="text/javascript">
+	//Задание: Переделать под цикл
+	let array = ["Ответ 1","Ответ 2","Ответ 3","Ответ 4"];
+	
+	let texts = document.querySelectorAll(".text");
+	
+	texts[0].onclick = function(){
+		texts[0].innerHTML = array[0]
+	}
+	texts[1].onclick = function(){
+		texts[1].innerHTML = array[1]
+	}
+	texts[2].onclick = function(){
+		texts[2].innerHTML = array[2]
+	}
+	texts[3].onclick = function(){
+		texts[3].innerHTML = array[3]
+	}
+
+
+</script>
+</body>
+</html>

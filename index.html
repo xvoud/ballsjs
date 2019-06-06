@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.ball{
+			height: 150px;
+			width: 150px;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			
+		}
+		.ball2{
+			height: 150px;
+			width: 150px;
+			background: blue;
+			border-radius: 50%;
+			position: absolute;
+			
+		}
+	</style>
+</head>
+<body>
+	<h1>Очки: <span class="score"></span></h1>
+	
+	<div class="ball" style="margin-left: 10%; margin-top: 10%"></div>
+	<div class="ball" style="margin-left: 20%; margin-top: 5%"></div>
+	<div class="ball" style="margin-left: 60%; margin-top: 25%"></div>
+	<div class="ball" style="margin-left: 30%; margin-top: 19%"></div>
+	<div class="ball" style="margin-left: 5%; margin-top: 30%"></div>
+	<div class="ball" style="margin-left: 25%; margin-top: 41%"></div>
+	<div class="ball" style="margin-left: 49%; margin-top: 40%"></div>
+	<div class="ball" style="margin-left: 40%; margin-top: 10%"></div>
+	<div class="ball" style="margin-left: 80%; margin-top: 15%"></div>
+	<div class="ball" style="margin-left: 75%; margin-top: 30%"></div>
+
+	<div class="ball2" style="margin-left: 13%; margin-top: 10%"></div>
+	<div class="ball2" style="margin-left: 20%; margin-top: 8%"></div>
+	<div class="ball2" style="margin-left: 64%; margin-top: 25%"></div>
+	<div class="ball2" style="margin-left: 33%; margin-top: 20%"></div>
+	<div class="ball2" style="margin-left: 8%; margin-top: 32%"></div>
+	<div class="ball2" style="margin-left: 28%; margin-top: 40%"></div>
+	<div class="ball2" style="margin-left: 50%; margin-top: 38%"></div>
+	<div class="ball2" style="margin-left: 42%; margin-top: 13%"></div>
+	<div class="ball2" style="margin-left: 82%; margin-top: 14%"></div>
+	<div class="ball2" style="margin-left: 77%; margin-top: 32%"></div>
+	
+	<script type="text/javascript">
+		let balls = document.querySelectorAll (".ball")
+		let ochki = 0
+		let balls2 = document.querySelectorAll(".ball2")
+		
+		for(let index = 0; index<10; index = index + 1){
+		balls[index].onclick = function () {
+			balls[index].style.display = "none"
+			ochki = ochki + 1
+			document.querySelector('.score').innerHTML = ochki
+			
+		}
+		}	
+		
+			none = function () {
+				for(let index = 0; index<10; index = index + 1){
+			balls[index].style.display = "none"
+			
+		}
+}
+		for(let index = 0; index<10; index = index + 1){
+		balls2[index].onclick = function () {
+			balls2[index].style.width = "200px"
+			balls2[index].style.height = "200px"
+			}
+			
+		}
+		
+		setTimeout(none,4000)
+		
+	</script>
+</body>
+</html>
